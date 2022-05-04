@@ -19,7 +19,7 @@ class _MyScanner extends State<Scanner> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
         appBar: AppBar(
           title: const Text("QR Code"),
         ),
