@@ -142,7 +142,7 @@ class _loginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (formkey.currentState!.validate()) {
                       Navigator.push(context, MaterialPageRoute(builder: (context) {
-                        return const MyHomePage();
+                        return const : LoginPage();
                       }));
                     } else {
                       print('Password salah');
