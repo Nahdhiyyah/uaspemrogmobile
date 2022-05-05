@@ -244,7 +244,7 @@ class _MyScanner extends State<Scanner> {
                   ),
                   child: const Text(
                     "Scan Sekarang!",
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) {
