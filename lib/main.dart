@@ -238,26 +238,23 @@ class _MyScanner extends State<Scanner> {
           Padding(
             padding: const EdgeInsets.only(top: 450),
             child: SizedBox(
-              height: 45,
-              width: 300,
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.teal[800],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25),
+                height: 45,
+                width: 300,
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.teal[800],
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                     ),
-                  ),
-                  child: const Text(
-                    "Scan Sekarang!",
-                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                  ),
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return const Scanner();
-                    }));
-                  }),
-            ),
-          )
+                    child: const Text(
+                      "Scan Sekarang!",
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      scanbarcode();
+                    })),
+          ),
         ])));
   }
 }
