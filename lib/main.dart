@@ -222,6 +222,7 @@ class _MyScanner extends State<Scanner> {
     return Scaffold(
         backgroundColor: Colors.teal[800],
         appBar: AppBar(
+          backgroundColor: Colors.teal[800],
           title: const Text("QR Code"),
         ),
         body: Center(
