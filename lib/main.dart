@@ -234,7 +234,7 @@ class _MyScanner extends State<Scanner> {
               width: 600,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.grey,
+                    primary: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),
