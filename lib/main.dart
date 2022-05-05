@@ -209,7 +209,7 @@ class _MyPilihan extends State<Pilihan> {
                       ),
                     ),
                     child: const Text(
-                      "Lihat history",
+                      "Lihat History",
                       style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                     ),
                     onPressed: () {
