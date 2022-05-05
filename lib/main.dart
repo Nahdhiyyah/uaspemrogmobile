@@ -33,8 +33,8 @@ class LoginPage extends StatefulWidget {
 
 // ignore: camel_case_types
 class _loginPageState extends State<LoginPage> {
-  String email = "nadia@gmail.com";
-  String password = "nadia";
+  String email = "admin";
+  String password = "12345";
 
   TextEditingController emailControl = TextEditingController();
   TextEditingController passwordControl = TextEditingController();
@@ -45,7 +45,7 @@ class _loginPageState extends State<LoginPage> {
     return Scaffold(
         body: SingleChildScrollView(
             child: Container(
-      height: 915,
+      //height: 915,
       color: Colors.teal[800],
       padding: const EdgeInsets.all(30),
       alignment: Alignment.center,
