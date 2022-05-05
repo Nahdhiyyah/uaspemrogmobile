@@ -166,7 +166,7 @@ class _MyPilihan extends State<Pilihan> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(30),
               child: SizedBox(
                 height: 45,
                 width: 600,
