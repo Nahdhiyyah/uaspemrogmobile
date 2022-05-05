@@ -231,7 +231,7 @@ class _MyScanner extends State<Scanner> {
             padding: const EdgeInsets.only(top: 100),
             child: SizedBox(
               height: 45,
-              width: 600,
+              width: 300,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
