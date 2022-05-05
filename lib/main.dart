@@ -223,7 +223,10 @@ class _MyScanner extends State<Scanner> {
         //backgroundColor: Colors.teal[800],
         appBar: AppBar(
           backgroundColor: Colors.teal[800],
-          title: const Text("Scanner QR Code"),
+          title: const Text(
+            "Scanner QR Code",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         body: Center(
             child: Column(children: <Widget>[
@@ -234,7 +237,7 @@ class _MyScanner extends State<Scanner> {
               width: 300,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
+                    primary: Colors.teal[800],
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),
