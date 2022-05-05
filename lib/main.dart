@@ -220,9 +220,9 @@ class _MyScanner extends State<Scanner> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.teal[800],
+        //backgroundColor: Colors.teal[800],
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.teal[800],
           title: const Text("Scanner QR Code"),
         ),
         body: Center(
