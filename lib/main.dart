@@ -228,7 +228,7 @@ class _MyScanner extends State<Scanner> {
         body: Center(
             child: Column(children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 350),
+            padding: const EdgeInsets.only(top: 450),
             child: SizedBox(
               height: 45,
               width: 300,
