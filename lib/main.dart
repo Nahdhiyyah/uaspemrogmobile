@@ -227,13 +227,29 @@ class _MyScanner extends State<Scanner> {
         body: Center(
             child: Column(children: <Widget>[
           const Padding(padding: EdgeInsets.all(250)),
-          TextButton(
-            style: TextButton.styleFrom(backgroundColor: Colors.black),
-            child: const Text("Scan QR Code"),
-            onPressed: () {
-              scanbarcode();
-            },
-          ),
+          Padding(
+            padding: const EdgeInsets.all(30),
+            child: SizedBox(
+              height: 45,
+              width: 600,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: const Color.fromARGB(255, 255, 255, 255),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
+                  child: const Text(
+                    "Scan Sekarang!",
+                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                      return const Scanner();
+                    }));
+                  }),
+            ),
+          )
         ])));
   }
 }
