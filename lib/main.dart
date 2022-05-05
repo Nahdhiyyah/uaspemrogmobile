@@ -178,7 +178,7 @@ class _MyPilihan extends State<Pilihan> {
                       ),
                     ),
                     child: const Text(
-                      "Scane QR Code",
+                      "Scan QR Code",
                       style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                     ),
                     onPressed: () {
