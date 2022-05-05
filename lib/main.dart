@@ -165,26 +165,29 @@ class _MyPilihan extends State<Pilihan> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: 45,
-              width: 600,
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(255, 255, 255, 255),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: SizedBox(
+                height: 45,
+                width: 600,
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 255, 255, 255),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25),
+                      ),
                     ),
-                  ),
-                  child: const Text(
-                    "Scane QR Code",
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return const Scanner();
-                    }));
-                  }),
-            ),
+                    child: const Text(
+                      "Scane QR Code",
+                      style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        return const Scanner();
+                      }));
+                    }),
+              ),
+            )
           ],
         ),
       ),
