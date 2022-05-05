@@ -222,13 +222,13 @@ class _MyScanner extends State<Scanner> {
     return Scaffold(
         backgroundColor: Colors.teal[800],
         appBar: AppBar(
-          backgroundColor: Colors.teal[800],
+          backgroundColor: Colors.white,
           title: const Text("QR Code"),
         ),
         body: Center(
             child: Column(children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 100),
+            padding: const EdgeInsets.only(top: 250),
             child: SizedBox(
               height: 45,
               width: 300,
