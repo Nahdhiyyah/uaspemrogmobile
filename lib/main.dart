@@ -15,11 +15,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Scanner Barcode',
-      theme: ThemeData(primarySwatch: Colors.grey),
       debugShowCheckedModeBanner: false,
-      home: const LoginPage(),
+      home: LoginPage(),
     );
   }
 }
@@ -178,7 +177,7 @@ class _MyPilihan extends State<Pilihan> {
               padding: const EdgeInsets.all(30),
               child: SizedBox(
                 height: 45,
-                width: 600,
+                width: 300,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       primary: const Color.fromARGB(255, 255, 255, 255),
@@ -193,6 +192,29 @@ class _MyPilihan extends State<Pilihan> {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) {
                         return const Scanner();
+                      }));
+                    }),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30),
+              child: SizedBox(
+                height: 45,
+                width: 300,
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: const Color.fromARGB(255, 255, 255, 255),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                    ),
+                    child: const Text(
+                      "Lihat history",
+                      style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        return const Konfirmasi();
                       }));
                     }),
               ),
@@ -263,6 +285,19 @@ class Konfirmasi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal[800],
+      appBar: AppBar(
+        title: const Text("History"),
+        backgroundColor: Colors.teal[800],
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const LoginPage();
+                }));
+              },
+              icon: const Icon(Icons.logout))
+        ],
+      ),
       body: Center(
         child: Card(
           elevation: 50,
@@ -292,6 +327,13 @@ class Konfirmasi extends StatelessWidget {
                       fontSize: 30,
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
+                    ), //Textstyle
+                  ),
+                  const Text(
+                    "admin",
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.black,
                     ), //Textstyle
                   ), //Text
                   const SizedBox(
