@@ -159,6 +159,7 @@ class _MyPilihan extends State<Pilihan> {
     return Scaffold(
       backgroundColor: Colors.teal[800],
       appBar: AppBar(
+        title: const Text("Pilihan"),
         backgroundColor: Colors.teal[800],
       ),
       body: Center(
