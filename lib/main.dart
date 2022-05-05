@@ -53,7 +53,7 @@ class _loginPageState extends State<LoginPage> {
         const Padding(padding: EdgeInsets.all(10)),
         const Text("Absensi", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold)),
         Image.asset("assets/images/qr.png"),
-        const Padding(padding: EdgeInsets.only(bottom: 250)),
+        const Padding(padding: EdgeInsets.only(bottom: 20)),
         _formBuilder(),
       ]),
     )));
