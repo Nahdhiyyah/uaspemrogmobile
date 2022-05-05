@@ -52,7 +52,7 @@ class _loginPageState extends State<LoginPage> {
       child: Column(mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.center, mainAxisSize: MainAxisSize.min, children: <Widget>[
         const Padding(padding: EdgeInsets.all(10)),
         const Text("Absensi", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold)),
-        const Padding(padding: EdgeInsets.only(bottom: 30)),
+        const Padding(padding: EdgeInsets.only(bottom: 50)),
         _formBuilder(),
       ]),
     )));
