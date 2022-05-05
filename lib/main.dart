@@ -197,7 +197,7 @@ class _MyPilihan extends State<Pilihan> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(30),
+              padding: const EdgeInsets.all(15),
               child: SizedBox(
                 height: 45,
                 width: 300,
