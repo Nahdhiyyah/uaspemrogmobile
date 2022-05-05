@@ -216,16 +216,13 @@ class _MyScanner extends State<Scanner> {
   Future scanbarcode() async {
     getcode = await FlutterBarcodeScanner.scanBarcode("#009922", "Cancel", true, ScanMode.DEFAULT);
     setState(() {
-      Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return const Konfirmasi();
-      }));
+      const Konfirmasi();
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //backgroundColor: Colors.teal[800],
         appBar: AppBar(
           backgroundColor: Colors.teal[800],
           title: const Text(
