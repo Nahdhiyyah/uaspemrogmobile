@@ -54,7 +54,7 @@ class _loginPageState extends State<LoginPage> {
         const Text("Absensi", textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold)),
         const Padding(padding: EdgeInsets.all(30)),
         Image.asset(
-          "assets/images/qr2.png",
+          "assets/images/qr3.png",
           width: 250,
           height: 250,
         ),
