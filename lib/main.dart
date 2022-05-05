@@ -223,12 +223,12 @@ class _MyScanner extends State<Scanner> {
         backgroundColor: Colors.teal[800],
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: const Text("QR Code"),
+          title: const Text("Scanner QR Code"),
         ),
         body: Center(
             child: Column(children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 250),
+            padding: const EdgeInsets.only(top: 350),
             child: SizedBox(
               height: 45,
               width: 300,
